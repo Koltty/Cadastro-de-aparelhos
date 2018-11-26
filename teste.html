@@ -1,0 +1,162 @@
+<!DOCTAYPE html>
+<head>
+	<title> Cadastro de aparelhos</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Cadastro de aparelhos">
+	<link href="estilo.css" rel="stylesheet">
+	
+	<style>
+	h1, h2  {
+	font-family: sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+
+
+main {
+
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	box-shadow: 0 0 10px #333;
+	background-image:  url(https://www.xda-developers.com/files/2017/02/android-internet-of-things-810x298_c.png);
+	
+	
+
+}
+
+header {
+    width: 60%;
+	height: 18%;
+	box-shadow: 0 0 20px #333;
+	margin-left: 20%;
+	margin-top: 5px;
+	background-color: #4682B4;
+	border-radius: 20px;
+
+
+}
+
+.formulário {
+			width: 60%;
+			height: 300px;
+			margin-left: 20%;
+			margin-top: 150px;
+			background-color: #4682B4;
+			box-shadow: 0 0 220px #333;
+			border-radius: 20px;
+			
+			
+
+			}
+.margin{
+			border-top-width: 0px;
+			border-left-width: 0px;
+			border-bottom-width: 0px;
+			border-right-width: 0px;
+}
+</style>
+<body>
+ <main>
+ <header>
+  <h1> Cadastro de Smartphones</h1> 
+  
+  </header>
+  
+<section class="formulário">
+<form action="Script_do_Formulario.php" method="post">
+
+
+<!-- ENDEREÇO -->
+<fieldset class = "margin">
+ <legend>Cadastro de Aparelhos e Linhas</legend>
+ <table cellspacing="10">
+
+  <tr>
+   <td>
+    <label for="nome">Nome:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="nome">
+   </td>
+   <td>
+    <label for="chamado">Chamado:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="chamado" size="4">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="termo">Anexar Termo:</label>
+   </td>
+   <td>
+    <input type="file" name="termo" >
+
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="modelo do aparelho">Modelo do aparelho:</label>
+   </td>
+   <td align="left">
+    <select name="modelo do aparelho"> 
+	 <option value="">Escolha o modelo </option>
+    <option value="">Samsung J5 </option> 
+    <option value="">Samsung J5 Prime</option> 
+    <option value="">Samsung J5 Prime2</option> 
+    <option value="">Samsung J7</option> 
+    <option value="">Samsung J7 Prime</option> 
+    <option value="">Samsung J7 Prime2</option> 
+    <option value="">Samsung J6 Prime</option> 
+    <option value="">Samsung J6 Prime2</option> 
+    <option value="">Samsung J4 Prime</option> 
+    <option value="">Samsung J4 Prime2</option> 
+    <option value="">Motorla Moto G2</option> 
+    <option value="">Motorla Moto G3</option> 
+   </select>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="imei">Imei: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="imei">
+   </td>
+  </tr>
+  
+  <tr>
+   <td>
+    <label for="linha">Linha: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="linha">
+   </td>
+  </tr>
+  
+  <tr>
+   <td>
+    <label for="operadora">Operadora:</label>
+   </td>
+   <td align="left">
+    <select name="operadora"> 
+	 <option value="">Escolha a operadora </option>
+    <option value="">Vivo </option> 
+    <option value="">Porto Conecta</option> 
+	<option value="">Claro</option> 
+	<option value="">Oi</option> 
+	<option value="">Tim</option> 
+   </td>
+  </tr>
+  
+ </table>
+<input type="submit">
+<input type="reset" value="Limpar">
+</fieldset>
+<br />
+</form>
+</section>
+</main>
+ </body>
